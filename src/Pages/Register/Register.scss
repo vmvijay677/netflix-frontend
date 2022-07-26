@@ -1,0 +1,84 @@
+.register {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    url("https://i.pinimg.com/originals/67/99/88/6799886e301c323bc202fbdb72376531.jpg");
+  background-size: cover;
+  position: relative;
+
+  .top {
+    .wrapper {
+      padding: 20px 50px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .logo {
+        height: 35px;
+      }
+    }
+  }
+
+  #loginButton {
+    color: red;
+    cursor: pointer;
+    margin-left: 8px;
+    font-weight: 500;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    top: 0;
+    left: 0;
+
+    p {
+      font-size: 18px;
+      margin: 0px;
+    }
+
+    #input {
+      width: 50%;
+      background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 22px;
+      height: 50px;
+      border-radius: 5px;
+
+      input {
+        flex: 9;
+        height: 100%;
+        border: none;
+        padding: 0 10px;
+        border-radius: 5px;
+        font-size: 16px;
+        font-weight: 500;
+        outline: none;
+      }
+
+      .registerButton {
+        flex: 3;
+        height: 50px;
+        background-color: red;
+        border: none;
+        color: white;
+        font-size: 20px;
+        cursor: pointer;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+      }
+    }
+  }
+}
