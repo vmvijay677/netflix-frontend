@@ -53,7 +53,7 @@ const Register = () => {
                         <button className="registerButton" onClick={handleStart}>Get Started</button>
                     </div>
                 ) : (
-                    <form className="input">
+                    <form id="input">
                         <input type="username" placeholder="Username" ref={usernameRef} />
                         <input type="password" placeholder="Password" ref={passwordRef} />
                         <button className="registerButton" onClick={handleFinish}>Start</button>
