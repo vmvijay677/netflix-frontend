@@ -16,7 +16,7 @@ const Listitem = ({ index, item }) => {
         const getMovie = async () => {
             try {
                 const res = await axios.get(
-                    `https://netflixclonebyvignesh.herokuapp.com/api/movies/find/` + item,
+                    `https://netflix-backend-api.vercel.app/api/movies/find/` + item,
                     {
                         headers: {
                             token:

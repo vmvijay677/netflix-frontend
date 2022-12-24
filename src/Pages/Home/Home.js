@@ -13,7 +13,7 @@ const Home = ({ type }) => {
         const getRandomLists = async () => {
             try {
                 const res = await axios.get(
-                    `https://netflixclonebyvignesh.herokuapp.com/api/lists/${type ? "?type=" + type : ""}${genre ? "&genre=" + genre : ""
+                    `https://netflix-backend-api.vercel.app/api/lists/${type ? "?type=" + type : ""}${genre ? "&genre=" + genre : ""
                     }`,
                     {
                         headers: {

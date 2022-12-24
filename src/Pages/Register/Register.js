@@ -23,7 +23,7 @@ const Register = () => {
         setPassword(passwordRef.current.value);
         setUsername(usernameRef.current.value);
         try {
-            await axios.post("https://netflixclonebyvignesh.herokuapp.com/api/auth/register", { email, username, password });
+            await axios.post("https://netflix-backend-api.vercel.app/api/auth/register", { email, username, password });
             history.push("/login");
         } catch (err) {
             console.log(err);

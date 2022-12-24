@@ -11,7 +11,7 @@ const Featured = ({ type, setGenre }) => {
     useEffect(() => {
         const getRandomContent = async () => {
             try {
-                const res = await axios.get(`https://netflixclonebyvignesh.herokuapp.com/api/movies/random?type=${type === undefined ? "series" : type}`,
+                const res = await axios.get(`https://netflix-backend-api.vercel.app/api/movies/random?type=${type === undefined ? "series" : type}`,
                     {
                         headers: {
                             token:
